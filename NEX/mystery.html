@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NEX</title>
+  <title>NEX</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
@@ -15,9 +15,7 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></scri
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
 <style>
-body {
-    font-family: 'Alfa Slab One';font-size: 22px;
-}
+
 .accordion {
   background-color: #eee;
   color: #444;
@@ -34,7 +32,14 @@ body {
 .active, .accordion:hover {
   background-color: #ccc; 
 }
+body {
+    font-family: 'New Century Schoolbook', TeX Gyre Schola, serif;
+    font-size: 22px;
+}
 
+.bold{
+  font-weight: bold;
+}
 .panel {
   padding: 0 18px;
   display: none;
@@ -45,10 +50,14 @@ body {
 
 
 
-	
+  
 </head>
 
 <body>
+   <div class = "text-center">
+      <h1>These shows are a perfect match for you!</h1>
+    </div>
+
     <div class='container-fluid'>
         <div id='action' class='row'>
             <div class='col-4'>
@@ -68,7 +77,7 @@ body {
 
         <div id='action' class='row'>
             <div class='col-4'>
-              <button class="accordion" >THE WITCHER</button>
+              <button class="accordion bold">THE WITCHER</button>
               <div class="panel">
                 <p>The witcher Geralt, a mutated monster hunter, struggles to find his place in a world in which people often prove more wicked than beasts.<br/>
                     <br/>
@@ -81,7 +90,7 @@ body {
                 
             </div>
             <div class='col-4'>
-              <button class="accordion">Orphan Black</button>
+              <button class="accordion bold">Orphan Black</button>
               <div class="panel">
                 <p>After witnessing the suicide of a girl who looks just like her, Sarah assumes her identity. But she soon discovers a compelling conspiracy that changes her life forever.<br/>
                     <br/>
@@ -95,7 +104,7 @@ body {
                 
             </div>
             <div class='col-4'>
-              <button class="accordion">How to Get Away With Murder</button>
+              <button class="accordion bold">How to Get Away With Murder</button>
               <div class="panel">
                 <p>Annalise Keating, a criminal defence lawyer and professor, teaches a group of aspiring law students. However, their lives alter when they get entangled in an aberrant murder. <br/>
                     <br/>
@@ -137,7 +146,7 @@ for (i = 0; i < acc.length; i++) {
 
 </script>
 
-	
+  
 
 
 </body>
