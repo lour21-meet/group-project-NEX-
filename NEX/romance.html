@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NEX</title>
+  <title>NEXT</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
@@ -17,7 +17,12 @@ src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></scri
 
 <style>
 body {
-    font-family: 'Alfa Slab One';font-size: 22px;
+    font-family: 'New Century Schoolbook', TeX Gyre Schola, serif;
+    font-size: 22px;
+}
+
+.bold{
+  font-weight: bold;
 }
 .accordion {
   background-color: #eee;
@@ -46,10 +51,15 @@ body {
 
 
 
-	
+  
 </head>
 
 <body>
+
+   <div class = "text-center">
+      <h1>These shows are a perfect match for you!</h1>
+    </div>
+    
     <div class='container-fluid'>
         <div id='action' class='row'>
             <div class='col-4'>
@@ -67,7 +77,7 @@ body {
 
         <div id='action' class='row'>
             <div class='col-4'>
-              <button class="accordion">Crazy Ex-Girlfriend</button>
+              <button class="accordion bold">Crazy Ex-Girlfriend</button>
               <div class="panel">
                 <p>Rebecca Bunch, a successful young woman impulsively gives up her life in New York and moves to California in order to find love and happiness. <br/>
                 Composer(s): Adam Schlesinger; Jerome Kurtenbach (pilot only); Frank Ciampi; Tom Polce <br/>
@@ -81,7 +91,7 @@ body {
                 
             </div>
             <div class='col-4'>
-              <button class="accordion">The Vampire Diaries</button>
+              <button class="accordion bold">The Vampire Diaries</button>
               <div class="panel">
                 <p>On her first day at high school, Elena meets Stefan and immediately feels a connection with him. However, what she doesn't know is that Stefan and his brother, Damon, are in fact vampires.<br/>
                     <br/>
@@ -95,7 +105,7 @@ body {
                 
             </div>
             <div class='col-4'>
-              <button class="accordion">Teen Wolf</button>
+              <button class="accordion bold">Teen Wolf</button>
               <div class="panel">
                 <p>Scott McCall, an awkward teen, turns into a werewolf after being bitten by one a day before sophomore year. He must learn to adapt to his new identity while handling life as a teenager. <br/>
                     <br/>
@@ -143,7 +153,7 @@ body {
         </div>
          <div id='action' class='row'>
             <div class='col-4'>
-              <button class="accordion">You</button>
+              <button class="accordion bold">You</button>
               <div class="panel">
                 <p>What would you do for love? For a brilliant male bookstore manager who crosses paths with an aspiring female writer, this question is put to the test. A charming yet awkward crush becomes something even more sinister when the writer becomes the manager's obsession. Using social media and the internet, he uses every tool at his disposal to become close to her, even going so far as to remove any obstacle --including people -- that stands in his way of getting to her. <br/>
                     <br/>
@@ -156,7 +166,7 @@ body {
                 
             </div>
             <div class='col-4'>
-              <button class="accordion">Jane The VIrgin</button>
+              <button class="accordion bold">Jane The VIrgin</button>
               <div class="panel">
                 <p>Jane Villanueva's life turns upside down after she gets artificially inseminated. She is in for a greater shock when she discovers that the biological donor is her boss and former crush.<br/>
                     <br/>
@@ -169,13 +179,49 @@ body {
                 
             </div>
             <div class='col-4'>
-              <button class="accordion">The 100</button>
+              <button class="accordion bold">The 100</button>
               <div class="panel">
                 <p>A nuclear conflict has decimated civilisation. Ninety-seven years later, a spaceship accommodating humanity's lone survivors despatches 100 juvenile delinquents back to the Earth. <br/>
                     <br/>
 
                 First episode date: March 19, 2014 <br/>
                 No. of episodes: 84 (list of episodes) <br/>
+                Available on: Netflix    </p>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+ </div></div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+          
+
+  
+
+
+</body>
+
+</html>
                 Available on: Netflix    </p>
               </div>
                 
